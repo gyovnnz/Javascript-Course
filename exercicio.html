@@ -10,8 +10,22 @@
     pulaLinha;
   }
   
-  var minhaIdade = 17;
-  var idadeAmigo = 21; 
-  var totalIdades = minhaIdade + idadeAmigo;
+  function sorteia (n) {
+   return Math.round(Math.random) * n); 
+  }
   
-  escreva(totalIdades);
+  var numeroPensado = sorteia(n);
+  var chute = parseInt(prompt("Já pensei! Qual número você acha que é?"));
+  
+  if (chute == numeroPensado) {
+    escreva("Uau! Você acertou! Eu pensei no " + numeroPensado);
+  }
+  if (chute > numeroPensado) {
+    escreva("Você errou! Seu chute foi maior que o número pensado.");
+  } else {
+    escreva("Você errou! Seu chute foi menor que o número pensado.");
+  }
+</script>
+  
+  
+  
